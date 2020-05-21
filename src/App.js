@@ -1,6 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import Recipe from "./Recipe";
 import './App.css';
+//import banner from "./images/banner.jpg";
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
 
   return (
     <div className="App">
+      
       <form onSubmit={getSearch} className="search-form">
         <input className="search-bar" type="text" value={search} onChange={updateSearch} />
         <button className="search-button" type="submit">
@@ -60,6 +62,7 @@ function App() {
         calories={recipe.recipe.calories}
         image={recipe.recipe.image}
         ingredients={recipe.recipe.ingredients}
+        url={recipe.recipe.url}
         />
        ))}
        </div>

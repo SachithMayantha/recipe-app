@@ -5,23 +5,30 @@
 }
 
 .search-form{
-  min-height: 10vh;
+  background-image: url("./images/banner.jpg");
+  border-radius: 7px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .search-bar{
+  height:15px ;
   width: 50%;
   border: none;
   padding: 10px;
+  border-radius: 6px;
 }
 
 .search-button{
+  border-radius: 1px;
+  height: 30px;
   background: lightcoral;
   border: none;
   padding: 10px 20px;
   color: white;
+  margin-left: 8px;
 }
 
 .recipes{
