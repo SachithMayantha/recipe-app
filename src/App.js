@@ -36,7 +36,13 @@ function App() {
         </button>
       </form>
       {recipes.map(recipe =>(
-        <Recipe/>
+        //taken data from state, pass to props
+        <Recipe
+        key={recipe.recipe.label}
+        title={recipe.recipe.label}
+        calories={recipe.recipe.calories}
+        image={recipe.recipe.image}
+        />
        ))}
     </div>
   );
