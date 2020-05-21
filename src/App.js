@@ -66,7 +66,7 @@ function App() {
         />
        ))}
        </div>
-       <footer><p><b>Owner : Sachith Mayantha Fernando</b></p></footer>
+       <footer><center><p><b>Sachith Mayantha Fernando</b> - Sabaragamuwa University of Sri Lanka</p></center></footer>
     </div>
   );
 }
