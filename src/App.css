@@ -6,7 +6,6 @@
 
 .search-form{
   background-image: url("./images/banner.jpg");
-  border-radius: 7px;
   height: 400px;
   display: flex;
   justify-content: center;
@@ -24,7 +23,7 @@
 .search-button{
   border-radius: 1px;
   height: 30px;
-  background: lightcoral;
+  background: #5b0f6e;
   border: none;
   padding: 10px 20px;
   color: white;
