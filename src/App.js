@@ -16,7 +16,7 @@ function App() {
   //useEffect for to do something after render
   useEffect(() => {
     getRecipes();
-  },[search]);
+  },[query]);
 
   //fetch the data
   const getRecipes = async () => {
@@ -32,7 +32,6 @@ function App() {
 
   const updateSearch = e => {
     setSearch(e.target.value);
-    console.log(search);
   }
 
   const getSearch = e => {
@@ -40,16 +39,19 @@ function App() {
     e.preventDefault();
     //Search data after the click search button 
     setQuery(search);
+    //Clean search box after display result
+    setSearch('');
   }
 
   return (
     <div className="App">
       <form onSubmit={getSearch} className="search-form">
-        <input className="search-form" type="text" value={search} onChange={updateSearch} />
+        <input className="search-bar" type="text" value={search} onChange={updateSearch} />
         <button className="search-button" type="submit">
           Search
         </button>
       </form>
+      <div className="recipes">
       {recipes.map(recipe =>(
         //taken data from state, pass to props
         <Recipe
@@ -57,8 +59,10 @@ function App() {
         title={recipe.recipe.label}
         calories={recipe.recipe.calories}
         image={recipe.recipe.image}
+        ingredients={recipe.recipe.ingredients}
         />
        ))}
+       </div>
     </div>
   );
 }
