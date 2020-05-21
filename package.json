@@ -1,5 +1,5 @@
 {
-  "homepage": "https://sachithmayantha.github.io/react-app",
+  "homepage": "https://sachithmayantha.github.io/recipe-app",
   "name": "recipe-app",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +12,8 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
