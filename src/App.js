@@ -46,7 +46,9 @@ function App() {
 
   return (
     <div className="App">
-      
+      <div className="Background">
+          <img className="Logo" src={require("./images/recipes.jpg")} alt="MyLogo"/>
+      </div>
       <form onSubmit={getSearch} className="search-form">
         <input className="search-bar" type="text" value={search} onChange={updateSearch} />
         <button className="search-button" type="submit">
