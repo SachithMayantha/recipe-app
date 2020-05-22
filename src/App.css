@@ -35,3 +35,16 @@
    justify-content: space-around;
    flex-wrap: wrap;
 }
+
+.Background {
+  background-image: url("./images/banner.jpg");
+}
+
+.Logo {
+    padding: 8px;
+    height: 7%;
+    width: 7%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    z-index: 2;
+}
