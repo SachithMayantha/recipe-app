@@ -10,11 +10,10 @@ const Recipe = ({title,calories,image, ingredients, url}) => {
             <ol>
                 {ingredients.map(ingredient =>(
                     <li>{ingredient.text}</li>
-                ))}
+                ))} 
             </ol>
             <p><b>Calories : </b>{calories}</p>
             <a className={style.try} href={url}>Try it.!</a>
         </div>
     );
-};
-export default Recipe;
+} 
