@@ -48,3 +48,20 @@
     border-radius: 5px;
     z-index: 2;
 }
+
+.Nav{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height:10vh;
+  background:rgb(105, 124, 131);
+  color: white;
+}
+
+.nav-links{
+  width:40%;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  list-style: none;
+}

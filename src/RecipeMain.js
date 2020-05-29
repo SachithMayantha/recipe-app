@@ -1,4 +1,5 @@
 import React, {useState,useEffect,Component} from 'react';
+import Recipe from './Recipe';
 
 
 class RecipeMain extends Component {
