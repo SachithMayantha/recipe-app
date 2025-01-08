@@ -17,3 +17,5 @@ const Recipe = ({title,calories,image, ingredients, url}) => {
         </div>
     );
 } 
+
+export default Recipe;
